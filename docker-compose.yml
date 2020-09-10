@@ -1,0 +1,23 @@
+version: "3.8"
+services:
+  api:
+    build: ./api
+    depends_on:
+      - postgres
+      - redis
+      - worker
+    ports:
+      - "3000:3000"
+      - "9229:9229"
+  worker:
+    build: ./worker
+    depends_on:
+      - redis
+    ports:
+      - "9230:9230"
+  postgres:
+    image: postgres:11.2-alpine
+    environment:
+      POSTGRES_PASSWORD: postgres
+  redis:
+    image: redis:6.0-alpine
