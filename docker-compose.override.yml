@@ -8,3 +8,7 @@ services:
     env_file: ./configs/worker.env
     volumes:
       - ./worker/src:/home/app/src
+  postgres:
+    env_file: ./configs/pg.env
+  pgadmin:
+    env_file: ./configs/pgadmin.env

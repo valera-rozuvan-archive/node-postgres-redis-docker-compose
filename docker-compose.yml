@@ -17,7 +17,13 @@ services:
       - "9230:9230"
   postgres:
     image: postgres:11.2-alpine
-    environment:
-      POSTGRES_PASSWORD: postgres
+    ports:
+      - "5432:5432"
   redis:
     image: redis:6.0-alpine
+  pgadmin:
+    image: dpage/pgadmin4
+    depends_on:
+      - postgres
+    ports:
+      - "8080:80"
