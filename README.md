@@ -2,6 +2,34 @@
 
 Project to demonstrate running Node.js with Postgres & Redis queue using Docker Compose.
 
+## Prerequisites
+
+Make sure you have the latest `docker-compose` installed. The compose scripts in this project are using some new syntax, so the `docker-compose` installed should support version `3.8` of compose scripts. See official docs on compose versions [here](https://docs.docker.com/compose/compose-file/compose-versioning/).
+
+To install latest `docker-compose` on a Debian based system you might get away with running:
+
+```
+sudo curl -L https://github.com/docker/compose/releases/download/1.28.2/docker-compose-`uname -s`-`uname -m` -o /usr/local/bin/docker-compose
+```
+
+Followed by:
+
+```
+sudo chmod +x /usr/local/bin/docker-compose
+```
+
+Then you can check the version of installed `docker-compose` by running:
+
+```
+docker-compose --version
+```
+
+You should see something like:
+
+```
+docker-compose version 1.28.2, build 67630359
+```
+
 ## Run everything
 
 ```sh
