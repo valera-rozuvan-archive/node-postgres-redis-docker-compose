@@ -1,5 +1,11 @@
 # Node.js + Postgres + Redis queue + Docker Compose
 
+## wip has moved
+
+Future work on this repository has moved to the monorepo [valera-rozuvan/docker-recipes](https://github.com/valera-rozuvan/docker-recipes). This repo is archived for historic purposes (to preserve commit history). Navigate over to [docker-recipes/node-postgres-redis-docker-compose](https://github.com/valera-rozuvan/docker-recipes/tree/main/node-postgres-redis-docker-compose) to see updates (if any).
+
+## introduction
+
 Project to demonstrate running Node.js with Postgres & Redis queue using Docker Compose.
 
 ## Prerequisites
